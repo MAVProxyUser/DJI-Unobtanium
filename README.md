@@ -7,6 +7,7 @@ https://github.com/lizhanbin/real_time_serve_v1/blob/master/cert/
 MD5 (dji_com.crt) = c25e14b10cd8cabc5f0e77e69a22835b
 MD5 (dji_com.key) = c77b748a6e768dd665dda8cf9b335dfb
 
+```
 $ openssl x509 -in dji_com.crt -text -noout
 Certificate:
     Data:
@@ -27,7 +28,8 @@ Certificate:
                     bf:7d:f6:69:4e:9d:c5:3b:13:d7:75:09:30:a5:97:
                     35:0f:b2:8d:d7:a3:a2:96:1f:27:4a:f9:80:c6:0a:
 ...
-
+```
+```
 $ sudo ruby Unobtanium.rb 
 Password:
 Running as root... thanks!
@@ -51,6 +53,7 @@ Certificate:
 localhost - - [02/Sep/2017:23:18:02 EDT] "GET / HTTP/1.1" 404 296
 - -> /
 ...
+```
 
 This quick test shows we can now spoof "https://*.dji.com" and our brower will be happy none the wiser! 
 <img src="https://github.com/MAVProxyUser/DJI-Unobtanium/raw/master/OGSSL.jpg">
